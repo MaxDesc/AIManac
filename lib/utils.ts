@@ -1,0 +1,1 @@
+export const fmtPct=(p?:number)=>p===undefined?"—":`${(p*100).toFixed(1)}%`;export const fmtOdd=(o?:number)=>o===undefined?"—":o.toFixed(2);export const clamp01=(x:number)=>Math.max(0,Math.min(1,x));export function badgeFromScore(s:number){if(s>=75)return"🔥 Forte valeur";if(s>=55)return"👍 Valeur probable";if(s>=45)return"⚠️ Légère valeur";return"";}
